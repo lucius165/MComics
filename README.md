@@ -1,3 +1,5 @@
 # MStory
+dự án nhiều thành viên
+gốc: https://github.com/fpt-pt11352/MStory
 
-// Project Mobile 01 // Khang, Hoang, Hung, Tu, Vuong // Ki 4, Block 2 // Giang vien : vantt
+- Trần Phú Hoàng - lucius165
