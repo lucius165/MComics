@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:weightSum="11">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="5">
+
+                        <ImageView
+                            android:id="@+id/imv_cover"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/loading" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="6"
+                        android:orientation="vertical">
+
+                        <!--name-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txv_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="No Name"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <!--author-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="15">
+
+                            <TextView
+                                style="@style/DetailText"
+                                android:layout_width="wrap_content"
+                                android:text="Tác giả"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/DetailText"
+                                android:layout_width="5dp"
+                                android:gravity="center_vertical"
+                                android:text=":" />
+
+                            <TextView
+                                android:id="@+id/txv_author"
+                                style="@style/DetailText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:text="No One" />
+                        </LinearLayout>
+                        <!--kind-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="15">
+
+                            <TextView
+                                style="@style/DetailText"
+                                android:layout_width="wrap_content"
+                                android:text="Thể loài "
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/DetailText"
+                                android:layout_width="5dp"
+                                android:gravity="center_vertical"
+                                android:text=":" />
+
+                            <TextView
+                                android:id="@+id/txv_kinds"
+                                style="@style/DetailText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="No Kind"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <!--chapter-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="15">
+
+                            <TextView
+                                style="@style/DetailText"
+                                android:layout_width="wrap_content"
+                                android:text="Số chap "
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/DetailText"
+                                android:layout_width="5dp"
+                                android:gravity="center_vertical"
+                                android:text=":" />
+
+                            <TextView
+                                android:id="@+id/txv_chapter"
+                                style="@style/DetailText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="9"
+                                android:text="0" />
+                        </LinearLayout>
+                        <!--views-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="15">
+
+                            <TextView
+                                style="@style/DetailText"
+                                android:layout_width="wrap_content"
+                                android:text="Lượt đọc "
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/DetailText"
+                                android:layout_width="5dp"
+                                android:gravity="center_vertical"
+                                android:text=":" />
+
+                            <TextView
+                                android:id="@+id/txv_views"
+                                style="@style/DetailText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="9"
+                                android:text="0" />
+                        </LinearLayout>
+                        <!--read button-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp">
+
+                            <Button
+                                android:id="@+id/btnDoctruyen"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/ic_import_contacts_black_24dp"
+                                android:text="Đọc" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--like share comment-->
+                <LinearLayout
+                    android:id="@+id/ll_social"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:weightSum="12">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/like"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="#365899"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:text="Like"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+
+                        <TextView
+                            android:id="@+id/comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="#365899"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:text="Comment"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="4">
+
+                        <TextView
+                            android:id="@+id/share"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="#365899"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:text="Share"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:paddingBottom="22dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:id="@+id/txv_readMoreTop"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Đọc thêm"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txv_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:singleLine="false"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txv_readMoreBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Đọc thêm"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/edtx_input"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginRight="3dp"
+                            android:layout_toLeftOf="@+id/txv_send"
+                            android:layout_toStartOf="@+id/txv_send"
+                            android:background="#e3f2fd"
+                            android:enabled="false"
+                            android:minLines="4"
+                            android:padding="3dp"
+                            android:textColor="#0d47a1"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txv_send"
+                            android:layout_width="55dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="#365899"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="Gửi"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_commentList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>

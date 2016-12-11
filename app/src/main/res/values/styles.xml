@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/actionBar</item>
+        <item name="colorPrimaryDark">@color/actionBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.actionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:height">40dp</item>
+        <item name="background">@color/actionBar</item>
+        <item name="android:background">@color/actionBar</item>
+    </style>
+
+    <style name="DetailText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="heightLine">
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+
+    <!--navigation-->
+    <style name="navigation_row">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="icon_row">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:padding">7dp</item>
+    </style>
+
+    <style name="text_row">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#093532</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

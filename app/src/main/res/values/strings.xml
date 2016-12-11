@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MComics</string>
+    <string name="project_mobile_01">Project Mobile 01</string>
+    <string name="facebook_app_id">1702012706779145</string>
+    <string name="token">EAAYLZBLbKcAkBACwlduPZAa84THE85FjmXukcGpSKWFASLQ5KeeSChABcmLsCvESFMvH2wCZBTZCkLPkyGnGxdu1ArnjyJApebjZAXFtkTZCV3XjgDHat6tINiBZBmfxYNczeOlKIpy8as9JWQD1wVweYApm3xrjSjieR8Ihz6ZCpAZDZD</string>
+    <string name="mcomics_database">mcomics_database</string>
+</resources>

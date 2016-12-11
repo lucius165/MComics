@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="#3B5998"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text=":" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_comment"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toLeftOf="@+id/txv_comment"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:gravity="bottom"
+            android:text="time"
+            android:textColor="#bdbdbd"
+            android:textSize="8sp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txv_comment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:minHeight="20dp"
+            android:paddingLeft="3dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>
